@@ -1,0 +1,56 @@
+<div class="anuncio">
+    <div class="container">
+      <h1 class="text-center">Bem vindo ao espetáculo de promoções!</h1>
+      <h4 class="text-center">Economize, pegue sue cupom de graça</h4>
+    </div>
+</div>
+<div class="brands">
+    <div class="container">
+    </div>
+</div>
+  <div class="top-promocoes">
+    <div class="container">
+    <span class="badge badge-pill badge-light">> TOP PROMOÇÕES</span>
+    <br/><br/>
+     <div class="row" >
+        <div class="col-4" *ngFor="let promocao of promocoes; let i=index">
+        <div *ngIf="i < 9">
+            <div class="card mb-3">
+                <img class="card-img-top" src="http://www.2beauty.com.br/blog/wp-content/uploads/2016/05/brindes-that-girl-mais-15-off.png" alt="Card image cap">
+                <div class="card-body">
+                  <h4 class="card-title">{{ promocao.valor_promocao}}%</h4>
+                  <p class="card-text">{{ promocao.descricao }}</p>
+                  <p class="card-text"><small class="text-muted">Válido até: {{ promocao.dataValidade }}</small></p>
+
+                  <div><a href="#" class="left">Compartilhar</a><a href="#" class="right">Onde usar?</a></div>
+                  <a href="#" class="btn btn-primary">Pegar Cupom</a>
+                </div>
+            </div>
+        </div>
+        </div>
+    </div>
+    </div>
+</div>
+<div class="farmacia">
+    <div class="container">
+    <span class="badge badge-pill badge-light">> FARMÁCIA</span>
+    <br/><br/>
+    <div class="row" >
+       <div class="col-4" *ngFor="let promocao of promocoes; let i=index">
+       <div *ngIf="i < 9">
+           <div class="card mb-3">
+               <img class="card-img-top" src="http://www.2beauty.com.br/blog/wp-content/uploads/2016/05/brindes-that-girl-mais-15-off.png" alt="Card image cap">
+               <div class="card-body">
+                 <h4 class="card-title">{{ promocao.valor_promocao}}%</h4>
+                 <p class="card-text">{{ promocao.descricao }}</p>
+                 <p class="card-text"><small class="text-muted">Válido até: {{ promocao.dataValidade }}</small></p>
+
+                 <div><a href="#" class="left">Compartilhar</a><a href="#" class="right">Onde usar?</a></div>
+                 <a href="#" class="btn btn-primary">Pegar Cupom</a>
+               </div>
+           </div>
+       </div>
+       </div>
+       </div>
+   </div>
+</div>

@@ -1,0 +1,73 @@
+<div class="col-lg-12 col-md-8">
+  <div class="card">
+      <div class="header">
+          <h4 class="title">Cadastre um novo cupom</h4>
+      </div>
+      <div class="content">
+        <form [formGroup]="form" (ngSubmit)="save()">
+              <div class="row">
+                  <div class="col-md-5">
+                      <div class="form-group">
+                          <label>Título</label>
+                          <input type="text" class="form-control border-input" formControlName="nome" placeholder="Nome" [(ngModel)]="promocao.nome" ngControl="nome">
+                      </div>
+                  </div>
+                  <div class="col-md-3">
+                      <div class="form-group">
+                          <label>E-flyer</label>
+                          <input type="text" class="form-control border-input" formControlName="capa" placeholder="c:/arquivos/..." [(ngModel)]="promocao.capa" ngControl="capa">
+                      </div>
+                  </div>
+                  <div class="col-md-4">
+                      <div class="form-group">
+                          <label for="exampleInputEmail1">Valor ou Porcentagem de Desconto</label>
+                          <input type="text" class="form-control border-input" formControlName="valor_promocao" placeholder="R$ 20,00 / 30" [(ngModel)]="promocao.valor_promocao" ngControl="valor_promocao">
+                      </div>
+                  </div>
+              </div>
+
+              <div class="row">
+                  <div class="col-md-6">
+                      <div class="form-group">
+                          <label>Data de Validade</label>
+                          <input type="text" class="form-control border-input" formControlName="dataValidade" placeholder="dd/mm/aaa" [(ngModel)]="promocao.dataValidade" ngControl="dataValidade">
+                      </div>
+                  </div>
+                  <div class="col-md-6">
+                      <div class="form-group">
+                          <label>Status</label>
+                          <input type="text" class="form-control border-input" formControlName="status" placeholder="Aqui será um checkbox" [(ngModel)]="promocao.status" ngControl="status">
+                      </div>
+                  </div>
+              </div>
+
+              <div class="row">
+                  <div class="col-md-6">
+                      <div class="form-group">
+                          <label for="exampleFormControlSelect1">Categoria</label>
+                          <input type="text" class="form-control border-input" formControlName="categoria" placeholder="Categoria" [(ngModel)]="promocao.categoria" ngControl="categoria">
+                        </div>
+                  </div>
+                  <div class="col-md-6">
+                      <div class="form-group">
+                          <label for="exampleFormControlSelect1">Fornecedor</label>
+                          <input type="text" class="form-control border-input" formControlName="fornecedor" placeholder="Fornecedor" [(ngModel)]="promocao.fornecedor" ngControl="fornecedor">
+                        </div>
+                  </div>
+              </div>
+              <div class="row">
+                  <div class="col-md-12">
+                      <div class="form-group">
+                          <label>Descrição da Promoção</label>
+                          <input type="text" class="form-control border-input" formControlName="descricao" placeholder="Ex: Combo Duplo Cheddar + Refrigerante 300ml + Cheddar Burguer por apenas R$17,90" [(ngModel)]="promocao.descricao" ngControl="descricao">
+                      </div>
+                  </div>
+              </div>
+              <div class="text-center">
+                  <button type="submit" class="btn btn-info btn-fill btn-wd">Cadastrar Promoção</button>
+              </div>
+              <div class="clearfix"></div>
+          </form>
+      </div>
+  </div>
+</div>

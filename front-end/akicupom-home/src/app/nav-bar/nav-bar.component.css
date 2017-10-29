@@ -1,0 +1,22 @@
+input{
+    background: #F79F24;
+    border: 0;
+    height: 50px;
+    color: #000;
+}
+input :focus{
+    background: #F79F24;
+    border: 0;
+}
+.busca{
+    background: #F79F24;
+    border: 0;
+    height: 50px;
+    font-size: 14px;
+    color:#333;
+}
+
+.categoria a{
+    color: #000;
+    padding-left: 20px;
+}

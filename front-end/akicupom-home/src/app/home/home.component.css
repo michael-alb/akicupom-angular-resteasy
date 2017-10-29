@@ -1,0 +1,25 @@
+.col-3{}
+.anuncio{
+    background: #10316B;
+    padding: 40px;
+    color: #fff;
+    font-family: 'Henny Penny', cursive; 
+}
+.anuncio h4{
+    background: #10316B;
+    color: #fff;
+    font-family: 'Roboto', cursive; 
+}
+.brands{
+    background: #FCF4D9;
+    padding: 20PX;
+}
+.top-promocoes{
+    background: #FCF4D9;
+    padding: 20PX;
+    border-bottom: 1px dashed #c1c1c1;
+}
+.farmacia{
+    background: #EAFFF7;
+    padding: 20PX;
+}

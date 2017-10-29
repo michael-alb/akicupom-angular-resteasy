@@ -1,0 +1,48 @@
+<div class="container-fluid">
+<div class="row">
+    <div class="col-lg-4 col-sm-4">
+    </div>
+    <div class="col-lg-4 col-sm-4">
+        <div class="card">
+            <div class="content">
+                <div class="col-lg-2 col-sm-12">
+                </div>  
+                <div class="col-lg-8 col-sm-12">             
+                <div class="logo-login">
+                        <div class="logo-img">
+                            <img src="../../assets/img/logohori.png" alt="">
+                        </div>
+                </div>
+                </div>
+                <div class="col-lg-2 col-sm-12">
+                </div>
+                <div class="row">  
+                    <div class="col-lg-0 col-sm-12">
+                      <hr/>
+                      <form>
+                        <div class="form-group">
+                            <label>Email</label>
+                            <input type="text" class="form-control border-input" placeholder="seunome@seuemail.com.br" [(ngModel)]="usuario.email" name="email">
+                        </div>
+                        <div class="form-group">
+                            <label>Senha</label>
+                            <input type="password" class="form-control border-input" placeholder="Digite sua senha" [(ngModel)]="usuario.password" name="password">
+                        </div>
+                        <div class="text-center">
+                            <button type="button" class="btn btn-info btn-fill btn-wd" (click)="onLogin()">Entrar</button>
+                        </div>
+                        <div class="clearfix"></div>
+                      </form>
+                      <hr/>
+                      <div class="">
+                          <a class="simple-text center">Esqueci minha senha!</a>
+                      </div>
+                    </div>
+                </div>         
+            </div>
+        </div>
+    </div>
+    <div class="col-lg-4 col-sm-4">
+    </div>
+</div>
+</div>

@@ -1,0 +1,49 @@
+<div class="container-fluid">
+
+
+    <div class="row">
+        <div class="col-md-12">
+            <div class="card">
+                <div class="header">
+                    <h4 class="title">Tabela de Promoções</h4>
+                    <p class="category">por id:</p>
+                </div>
+                <div class="content table-responsive table-full-width">
+                    <table class="table table-striped">
+                        <thead>
+                            <tr>
+                                <th data-field="name">ID</th>
+                                <th data-field="name">Titulo</th>
+                                <th data-field="name">Descrição</th>
+                                <th data-field="name">Data de Validade</th>
+                                <th data-field="name">Status</th>
+                                <th data-field="name">Editar</th>
+                                <th data-field="name">Deletar</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr *ngFor="let promocao of promocoes" >
+                                <td>{{ promocao.id }}</td>
+                                <td>{{ promocao.nome }}</td>
+                                <td>{{ promocao.descricao }}</td>
+                                <td>{{ promocao.dataValidade }}</td>
+                                <td>{{ promocao.status }}</td>
+                                <td>
+                                    <a [routerLink]="['user/cadastro-cupom', promocao.id]">
+                                      <i class="ti-pencil-alt"> Editar</i>
+                                    </a>
+                                  </td>
+                                  <td>
+                                   
+                                      <a (click)="deletePromocao(promocao)"> <i class="ti-eraser"></i>Excluir</a>
+                                    
+                                  </td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

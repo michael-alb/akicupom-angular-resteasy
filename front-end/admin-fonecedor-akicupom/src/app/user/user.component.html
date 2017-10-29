@@ -1,0 +1,38 @@
+    <div class="container-fluid">
+        <div class="row">
+                <li *ngFor="let menuItem of menuItems" routerLinkActive="active" class="{{menuItem.class}}">
+                        <div class="col-lg-4 col-sm-6">
+                                <div class="card">
+                                    <div class="content">
+                                        <div class="row">
+                                            <div class="col-xs-4">
+                                                <div class="icon-big icon-info text-center">
+                                                    <i class="{{menuItem.icon}}"></i>
+                                                </div>
+                                            </div>
+                                            <div class="col-xs-7">
+                                                <div class="numbers">
+                                                    <p class="lead">
+                                                    {{menuItem.title}}
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="footer">
+                                            <hr />
+                                            <div class="stats">
+                                                    <a [routerLink]="[menuItem.path]">
+                                                            {{menuItem.buttonlink}}
+                                                    </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                        </div>
+                </li>
+
+
+        
+
+        </div>
+    </div>

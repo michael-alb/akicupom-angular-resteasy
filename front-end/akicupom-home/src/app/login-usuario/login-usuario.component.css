@@ -1,0 +1,48 @@
+.col-md-6{
+    margin-top: 70px;
+}
+form{
+    background: #fff;
+    padding: 30px;
+    margin-top: 150px;
+    margin-bottom: 60px;    
+    
+}
+.box-social{
+    padding: 30px;
+    margin-top: 150px;
+    margin-bottom: 60px;    
+    
+}
+.box-social h2{
+    color: #fff;
+}
+input{
+    background: #f9f9f9;
+    border: 0;
+    border-radius: 0;
+    height: 50px;
+}
+.btn-primary{
+    background: #3e5c9a;
+    border: 0;
+    border-radius: 0;
+    height: 40px;
+}
+.btn-danger{
+    background: #dd5044;
+    border: 0;
+    border-radius: 0;
+    height: 42px;
+}
+.btn-default{
+    background: #e4e4e4;
+    border: 0;
+    border-radius: 0;
+    height: 42px;
+}
+.btn-info{
+    border: 0;
+    border-radius: 0;
+    height: 42px;
+}
