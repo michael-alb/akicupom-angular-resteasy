@@ -1,0 +1,13 @@
+.card{
+    border-radius:10px;
+    box-shadow: 1px 1px 1px grey; 
+    border: 0;
+}
+.card-title{
+    background:#E3EFF3;
+    color: #283E56;
+    border: #283E56 dashed 1px;
+    border-radius:10px; 
+    padding: 10px;
+    font-size: 30px;
+}

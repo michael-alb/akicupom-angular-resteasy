@@ -1,77 +1,21 @@
-<div class="fixed-action-btn" style="bottom: 45px; right: 24px;">
-  <a class="btn-floating btn-large waves-effect waves-light green"
-     routerLink="/users/new">
-    <i class="material-icons">add</i>
-  </a>
-</div>
-
 <div class="row">
-
-  <br/>
-
-  <div class="chip">
-    <i class="view_module"></i>
-    Mostrando {{ promocoes.length }} cupons.
-  </div>
-
-  <div class="col s12 m4 l3"> <!-- Note that "m4 l3" was added -->
-
-
-
-    <ul>
-      <li>
-        <a class="collection-item"  routerLink="/user/new"><i class="material-icons">add</i>Cadastrar promoção</a>
-      </li>
-      <li>
-        <a href="#!" class="collection-item"  routerLink="/user/"><i class="material-icons">done</i>Validar Promoção</a>
-      </li>
-    </ul>
-
-  </div>
-
-  <div class="col s12 m8 l9"> <!-- Note that "m8 l9" was added -->
-
-    <table>
-      <thead>
-      <tr>
-        <th data-field="name">Titulo</th>
-        <th data-field="name">Descrição</th>
-        <th data-field="name">Data de Validade</th>
-        <th data-field="name">Editar</th>
-        <th data-field="name">Deletar</th>
-      </tr>
-      </thead>
-
-      <tbody>
-      <tr *ngFor="let promocao of promocoes">
-        <td>{{ promocao.nome }}</td>
-        <td>{{ promocao.descricao}}</td>
-        <td>{{ promocao.dataValidade}}</td>
-        <td>
-          <a [routerLink]="['/promocoes', promocao.id]">
-            <i class="material-icons">mode_edit</i>
-          </a>
-        </td>
-        <td>
-          <a (click)="deletePromocao(promocao)" href="">
-            <i class="material-icons">delete</i>
-          </a>
-        </td>
-      </tr>
-      </tbody>
-    </table>
-    <br/>
-    <!--<ul class="pagination">
-      <li class="disabled"><a href="#!"><i class="material-icons">chevron_left</i></a></li>
-      <li class="active"><a href="#!">1</a></li>
-      <li class="waves-effect"><a href="#!">2</a></li>
-      <li class="waves-effect"><a href="#!">3</a></li>
-      <li class="waves-effect"><a href="#!">4</a></li>
-      <li class="waves-effect"><a href="#!">5</a></li>
-      <li class="waves-effect"><a href="#!"><i class="material-icons">chevron_right</i></a></li>
-    </ul>-->
-
-
-  </div>
-
+    <div class="col-sm-4" *ngFor="let promocao of promocoes; let i=index">
+        <div class="card mb-3">
+            <img class="card-img-top" src="http://www.2beauty.com.br/blog/wp-content/uploads/2016/05/brindes-that-girl-mais-15-off.png" alt="Card image cap">
+            <div class="card-body">
+              <div class="row">
+                  <div class="col-sm-8">
+                      <p class="card-subtitle mb-2 text-muted"><small>Válido até: {{ promocao.dataValidade }}</small></p>
+                      <a href="#" class="card-link text-danger"><small>{{ promocao.categoria.nome }}</small></a>
+                  </div>
+                  <div class="col-sm-4">
+                    <h3 class="card-title text-right">{{ promocao.valor_promocao}}%</h3>
+                  </div>
+              </div>
+                <p class="card-text">{{ promocao.descricao }}</p>
+                <div><a href="#" class="card-link">Compartilhar</a><a href="#" class="card-link text-right">Onde usar?</a></div>
+                <a href="#" class="btn btn-warning btn-block">Pegar Cupom</a>
+            </div>
+        </div>
+    </div>
 </div>

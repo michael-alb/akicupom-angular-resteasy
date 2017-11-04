@@ -23,3 +23,8 @@
     background: #EAFFF7;
     padding: 20PX;
 }
+.card{
+    border-radius:10px;
+    box-shadow: 1px 1px 1px grey; 
+    border: 0;
+}
